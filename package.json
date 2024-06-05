@@ -1,10 +1,9 @@
 {
   "name": "food-villa",
   "version": "1.0.0",
-  "description": "",
   "main": "App.js",
   "scripts": {
-    "start":"parcel index.html",
+    "start": "parcel index.html --port 1234 ",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -15,7 +14,10 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "parcel-bundler": "^1.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
