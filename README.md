@@ -1,0 +1,16 @@
+/**
+ *  Header
+ *   - Logo
+ *   -Nav items
+ *  Body
+ *   - Search
+ *   - RestaurantsContainer
+ *   - RestaurantCard
+ *       -Img
+ *       -name of Res,Star ratings,delivery etc..   
+ *  Footer
+ *   -Copyright
+ *    -Links
+ *    -Address
+ *    -Contacts
+ */
