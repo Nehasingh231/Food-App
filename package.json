@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "App.js",
   "scripts": {
-    "start": "parcel index.html --port 1234 ",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
