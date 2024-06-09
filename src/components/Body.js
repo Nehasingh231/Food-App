@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
 import Shimer from "./Shimer"
 
 const Body =() => {
@@ -18,14 +17,11 @@ const Body =() => {
 
     const json = await data.json();
     console.log(json);
-    setListOfRestaurants(json?.data?.cards);
+    setListOfRestaurants(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    
   };
 
-  if(listOfRestaurants.length == 0) {
-    return <Shimer />;
-  }
-
-  return(
+  return listOfRestaurants.length === 0 ? <Shimer /> : (
        <div className="body">
        <div className="filter">
        <button className="filter-btn" onClick={() => {

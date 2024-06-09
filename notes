@@ -11,4 +11,6 @@ backend data come to us in json form
 
   whenevr a state variable update react will rerender my component
 
-if you want to make ur component dynamic if u want something chnage in ur component you should use reacthook {useState} not just normal variable
+if you want to make ur component dynamic if u want something chnage in ur component you should use localstate variable {useState} not just normal variable
+
+rendring based on conditon is known as conditional rendring

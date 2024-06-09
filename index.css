@@ -70,3 +70,7 @@ margin: 10px;
     height: 400px;
     background-color:rgba(196, 192, 192, 0.244);
 }
+.login{
+    padding: 0 20px;
+    cursor:pointer;
+}
