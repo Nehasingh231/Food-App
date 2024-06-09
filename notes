@@ -2,3 +2,12 @@ props are just argument of function
 passing a props to component is just like passing argument to functions
 prop is a object.
 backend data come to us in json form
+
+
+#react Hooks
+(Normal js utility function)
+  useState()
+  useEffect()
+
+  whenevr a state variable update react will rerender my component
+
