@@ -11,3 +11,4 @@ backend data come to us in json form
 
   whenevr a state variable update react will rerender my component
 
+if you want to make ur component dynamic if u want something chnage in ur component you should use reacthook {useState} not just normal variable

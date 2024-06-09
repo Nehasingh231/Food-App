@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
+import Shimer from "./Shimer"
+
 const Body =() => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
    
@@ -18,6 +20,10 @@ const Body =() => {
     console.log(json);
     setListOfRestaurants(json?.data?.cards);
   };
+
+  if(listOfRestaurants.length == 0) {
+    return <Shimer />;
+  }
 
   return(
        <div className="body">
@@ -40,4 +46,4 @@ const Body =() => {
        </div>
     );
    };
-   export default Body
+   export default Body;
