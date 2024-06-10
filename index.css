@@ -52,12 +52,10 @@ margin: 10px;
     margin: 20px;
     padding: 15px;
     cursor: pointer;
-    border-radius: 50px;
-    border: none;
+    /* border-radius: 50px; */
+    /* border: none; */
 }
-.filter-btn:hover{
-    background-color: rgb(137, 223, 223);
-}
+
 
 .shimer-container{
     display: flex;
@@ -73,4 +71,7 @@ margin: 10px;
 .login{
     padding: 0 20px;
     cursor:pointer;
+}
+.filter{
+    display: flex;
 }

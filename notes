@@ -5,12 +5,15 @@ backend data come to us in json form
 
 
 #react Hooks
+
 (Normal js utility function)
   useState()
   useEffect()
 
-  whenevr a state variable update react will rerender my component
+  whenevr a state variable update/change react will re-render code component
 
 if you want to make ur component dynamic if u want something chnage in ur component you should use localstate variable {useState} not just normal variable
 
 rendring based on conditon is known as conditional rendring
+
+e.target.value is the value property of some DOM element, in this case that means the text entered in the search input.
