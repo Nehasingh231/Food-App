@@ -2,29 +2,30 @@ import React from "react";
 import {useState, useEffect } from "react";
 import Shimer from "./Shimer";
 
-const RestaurantMenu = (props) => {
+const RestaurantMenu = () => {
  
     const [resInfo,setResInfo]= useState(null);
     
    useEffect(() => {
     fetchMenu();
-   }, []);
-
-   
+   }, []);   
 
    const fetchMenu = async () => {
-    const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.59080&lng=85.13480&restaurantId=725082&catalog_qa=undefined&submitAction=ENTER");
+    const data = await fetch("");
     const json = await data.json();
-    // console.log(json);
-    setResInfo(json.data)
+
+    console.log(json);
+    setResInfo(json.data);
    };
 
+  if (resInfo === null) return <Shimer /> ;
+  
+   const {name, cuisines, costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
 
-
-    return (resInfo === null) ? ( <Shimer /> ) : (
+    return (
         <div className="menu">
-        
-        <h2> {resInfo?.cards[2]?.card?.card?.info?.costForTwoMessage}</h2>
+        <h1>{resInfo?.cards[2]?.card?.card?.info?.name}</h1>
+        <p>{cuisines.join(", ")}-{costForTwoMessage}</p>
         <h2>Menu</h2>
         <ul>
         <li>Biryani</li>
