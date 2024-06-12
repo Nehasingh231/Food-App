@@ -17,3 +17,13 @@ if you want to make ur component dynamic if u want something chnage in ur compon
 rendring based on conditon is known as conditional rendring
 
 e.target.value is the value property of some DOM element, in this case that means the text entered in the search input.
+
+if no dependenchy array then useEffect is called on every render.
+  
+    .in useEffect , square bracket is called dependency array.
+
+if the dependency array is empty then useEffect called on initial render(just once).
+
+if the dependency array is not empty then useEffect called everytime when depedency changes.
+
+never use useState in condition . --like inside if else,for loop ,functions etc....use useState on top after component.
