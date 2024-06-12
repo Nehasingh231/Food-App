@@ -1,7 +1,7 @@
 import React from "react";
 import { CDN_URL } from "../utils/constants";
 
-const RestaurantCard = (props)=> {
+const RestaurantCard = (props)=> { 
     const {resData} = props;
     const {cloudinaryImageId,
       name,

@@ -14,3 +14,7 @@
  *    -Address
  *    -Contacts
  */
+
+ # 2 types Routingg in web apps
+   - Client Side Routing
+    -Server Side Routing
