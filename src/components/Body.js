@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimer from "./Shimer"
+import { Link } from "react-router-dom";
 
 const Body =() => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -55,7 +56,12 @@ setSearchText(e.target.value);
        <div className="search">Search</div>
        <div className="res-container">
          {filteredRestaurant.map((restaurant) => (
-           <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          <Link 
+          key={restaurant.info.id}
+          to={"restaurants/" + restaurant.info.id }
+          >
+           <RestaurantCard  resData={restaurant} />
+           </Link>
          ))}
        </div>
        </div>
