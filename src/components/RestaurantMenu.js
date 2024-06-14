@@ -39,12 +39,10 @@ const {name, cuisines, costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
         
             <li key = {items.card.info.id} >
             {items.card.info.name}-{" Rs. "}
-            {items.card.info.price /100}
+            {items.card.info.price / 100 || items.card.info.defaultPrice / 100}
             </li>
     ))}
-        <li>Biryani</li>
-        <li>Burger</li>
-        <li>Diet Coke</li>
+    
         </ul>
         </div>
     );

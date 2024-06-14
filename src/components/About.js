@@ -1,12 +1,15 @@
 import React from "react";
+import User from "./User";
+import UserClass from "./UserClass";
+
 const About =()=> {
     return (
         <div>
         <h1>About</h1>
-        <h2>Hey Everyone, <br />
-        This is me NEHA SINGH <br />
-         This is React Web Series
-        </h2>
+        <h2>
+         This is React Web Series</h2>
+       <User name={"neha singh" }/>
+        <UserClass name={"neha singh (class compo)"} location={"Siwan, Bihar"} />
         </div>
     );
 };
