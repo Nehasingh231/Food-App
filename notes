@@ -27,3 +27,10 @@ if the dependency array is empty then useEffect called on initial render(just on
 if the dependency array is not empty then useEffect called everytime when depedency changes.
 
 never use useState in condition . --like inside if else,for loop ,functions etc....use useState on top after component.
+
+
+_______________--
+
+higher order componnet is a component that takes a component and returns a component,means it takes a existing component and enhance/modify it and then returns it.
+
+higher order functions are pure function...pure function means
