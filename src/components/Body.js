@@ -4,9 +4,6 @@ import RestaurantCard from "./RestaurantCard";
 import Shimer from "./Shimer"
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-   
-
-console.log("neha")
 
 const Body =() => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -24,7 +21,7 @@ const Body =() => {
     );
 
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
 
     setListOfRestaurants(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredRestaurant(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);

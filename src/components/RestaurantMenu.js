@@ -9,14 +9,16 @@ const RestaurantMenu = () => {
 
     const resInfo = useRestaurantMenu(resId);
     
-
-
 if (resInfo === null) return <Shimer /> ;
 
 const {name, cuisines, costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
 
  const {itemCards} = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
- console.log(itemCards);
+ console.log( resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
+
+ const categories = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.
+ filter(c => c.cards?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+ )
 
     return (
         <div className="menu">
