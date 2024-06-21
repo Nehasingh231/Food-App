@@ -29,6 +29,8 @@ if the dependency array is not empty then useEffect called everytime when depede
 never use useState in condition . --like inside if else,for loop ,functions etc....use useState on top after component.
 
 
+React.lazy and Suspense: These features enable lazy loading of components, which means that only the components needed for the initial render are loaded first, and additional components are loaded on demand. This reduces the initial load time and improves the application's performance.
+
 _______________--
 
 higher order componnet is a component that takes a component and returns a component,means it takes a existing component and enhance/modify it and then returns it.
