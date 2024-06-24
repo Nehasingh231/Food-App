@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Shimer from "./Shimer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
@@ -9,6 +9,8 @@ const RestaurantMenu = () => {
     const {resId} = useParams();
 
     const resInfo = useRestaurantMenu(resId);
+
+    const [showIndex, setShowIndex] = useState(null);
     
 if (resInfo === null) return <Shimer /> ;
 
@@ -24,8 +26,12 @@ const {name, cuisines, costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
         <div className="text-center">
         <h1 className="font-bold my-7 text-2xl">{name}</h1>
         <p className="font-bold text-lg"> {cuisines.join(",")} - {costForTwoMessage}</p>
-        {categories.map((category) => (
-            <RestaurantCategories key={category?.card?.card.title} data={category?.card?.card} />
+        {categories.map((category, index) => (
+            <RestaurantCategories key={category?.card?.card.title} 
+            data={category?.card?.card}
+            showItems={index === showIndex ? true: false}
+            setShowIndex={() => setShowIndex(index)}
+            />
         ))}
         </div>
     );

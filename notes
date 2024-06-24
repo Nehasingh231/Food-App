@@ -36,3 +36,13 @@ _______________--
 higher order componnet is a component that takes a component and returns a component,means it takes a existing component and enhance/modify it and then returns it.
 
 higher order functions are pure function...pure function means
+
+if a component is controlled by its parent it is called controlled component..
+as we know every component has its own state..if you want to check then go to the broser add extension react developer tool then go to >> this section u will find coponent section.
+     
+     there is something knows as props drilling that means problem with props thats why we use useContext react hook.
+
+only the data u use multiple places then use useContext, u can use useContext data anywhere u want.
+
+# Redux -- Redux and React are different libraries
+    Redux offers easy debugging
