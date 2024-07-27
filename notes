@@ -12,7 +12,7 @@ backend data come to us in json form
 
   whenevr a state variable update/change react will re-render code component
 
-if you want to make ur component dynamic if u want something chnage in ur component you should use localstate variable {useState} not just normal variable
+if you want to make ur component dynamic if u want something chnage in ur component you have to use localstate variable {useState} not just normal variable
 
 rendring based on conditon is known as conditional rendring
 
@@ -46,3 +46,9 @@ only the data u use multiple places then use useContext, u can use useContext da
 
 # Redux -- Redux and React are different libraries
     Redux offers easy debugging
+
+
+    we can use lazy loading to distribute my code into differnt chunks that it makes our app to load more faster.
+    to reduce bundle size of our code we use chunking/lazy loading/code spliting/on demand loading/dynamic bundling.
+
+    
